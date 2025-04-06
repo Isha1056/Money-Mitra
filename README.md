@@ -42,6 +42,37 @@ Clone the repository and install required dependencies:
 ├── test_model.ipynb          # Evaluation notebook
 ├── requirements.txt          # Required dependencies
 ├── logs/                     # Trained model weights
-├── data/                     # Unseen test images
+├── dataset/                  # Unseen test images
 ├── assets/                   # Optional: visual output samples
 ```
+
+## Training the Model
+To train your own version of the model, follow these steps:
+
+### Download the Pretrained Weights
+Download the mask_rcnn_coco.h5 file from the [official repository](https://github.com/matterport/Mask_RCNN/releases).
+
+### Use the Stratified Dataset
+Organize your labeled Indian currency notes in a stratified directory structure (by denomination and condition) under the following directory:
+```
+├── dataset
+    ├──Train               # Sample images for training
+    ├──Test                # Sample images for testing
+    ├──Val                 # Sample images for validation
+```
+
+### Train Using the Notebook
+Although this notebook is named test_model, you can adapt it by un-commenting the training blocks to begin training.
+
+## License
+This repository is a **state-of-the-art solution** developed for educational and research purposes.  
+The developers **reserve all rights** pertaining to commercial deployment and derivative works intended for operational use.
+
+You are permitted to:
+- Use this code for academic research or personal experimentation.
+- Modify and build upon it **non-commercially**, provided proper credit is given.
+However:
+- **Commercial deployment**, distribution, or productization of this solution **requires explicit permission** from the authors.
+- This repository builds upon the open-source [Matterport Mask R-CNN implementation](https://github.com/matterport/Mask_RCNN), which is licensed under the MIT License. Please review their repository for specific terms related to their code.
+
+Trained weights (`mask_rcnn_coco.h5`) used as the base model are released by the original authors under similar open licenses, and are meant strictly for research and educational purposes.
