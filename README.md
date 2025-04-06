@@ -11,13 +11,13 @@ The system uses a robust 4-step pipeline for accurate and scalable adjudication:
 - Dataset: 200 labeled entries from the Soiled Indian Currency Dataset (Meshram et al., 2023)
 - Output: Segmented note images and their respective denominations.
 
-  ![Alt Text](results\panorama10.jpg)
+  ![Alt Text](results\output_2.png)
 
 ### 2. Keypoint Detection with SIFT
 - Algorithm: Scale-Invariant Feature Transform (Lowe, 2004)
 - Purpose: Detect keypoints and descriptors invariant to scale, rotation, or translation in segmented notes.
 
-![Alt Text](results\panorama10.jpg)
+  ![Alt Text](results\panorama10.jpg)
 
 ### 3. Feature Matching & Image Warping
 - Method: Brute-Force Matcher
@@ -28,8 +28,6 @@ The system uses a robust 4-step pipeline for accurate and scalable adjudication:
 
 ### 4. Adjudication & Appointment Booking
 - Overlaid images are analyzed to determine note quality and whether replacement is needed.
-- If required, the system triggers an appointment scheduling module.
-- Nearest available branch is identified based on user input and appointment is booked.
 
 ## Installation
 
