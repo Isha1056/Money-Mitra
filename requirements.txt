@@ -1,0 +1,16 @@
+scipy
+Pillow
+cython
+matplotlib
+#scikit-image==0.16.2
+tensorflow==2.4.0
+keras==2.4.0
+opencv-python==4.5.4.60
+h5py==2.10.0
+imgaug
+IPython[all]
+numpy==1.19.5
+tensorflow-gpu==2.4.0
+pandas==1.3.4
+seaborn
+scikit-learn
